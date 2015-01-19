@@ -6,7 +6,7 @@ define([
 	 registerSuite({
         name: 'hello',
         greet: function () {
-        	
+        	assert.isDefined(hello,'hello is defined');
         	assert.isDefined(hello.greet,'hello.greet is defined');
             assert.isTrue(typeof hello.greet==='function', 'hello.greet should ');
             assert.strictEqual(hello.greet('Murray'), 'Hello, Murray!',
