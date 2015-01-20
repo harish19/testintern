@@ -13,4 +13,4 @@ install:
   - "npm install"
 
 script:
-  - ./node_modules/.bin/intern-client config=tests/intern
+  - node node_modules/intern/runner.js config=tests/intern
